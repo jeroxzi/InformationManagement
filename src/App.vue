@@ -3,8 +3,10 @@
     <div class="mainCointainer">
       <div class="bodyCointainer">
         <div class="sidebar">
-          <div class="sidebar__inner">
+          <div class="user-sidebar__container">
             <Users />
+          </div>
+          <div class="post-sidebar__container">
             <Posts />
           </div>
         </div>
@@ -50,12 +52,8 @@ body {
   margin: 0;
 }
 
-.sidebar {
-  padding: 0 24px 24px 24px;
-  color: white;
-  height: 100vh;
-  overflow: scroll;
-}
+/* .sidebar {
+} */
 
 .container {
   max-width: 1000px;
@@ -121,5 +119,19 @@ body {
   background-color: #696969;
   color: white;
   text-align: center;
+}
+
+.user-sidebar__container {
+  padding: 0 24px 24px 24px;
+  color: white;
+  height: 45vh;
+  overflow: scroll;
+}
+
+.post-sidebar__container {
+  padding: 0 24px 24px 24px;
+  color: white;
+  height: 50vh;
+  overflow: scroll;
 }
 </style>
